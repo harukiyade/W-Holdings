@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ja" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+<head>
+    <!-- CMS-GA-TRACKING-CODE START -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-167328422-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-167328422-2');
+    </script>
+
+    <!-- CMS-GA-TRACKING-CODE END -->
+
+    <meta charset="utf-8">
+    <title>W Hoidings｜sample</title>
+    <meta name="description" content="これはサンプルです。">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link href = "https： //fonts.googleapis.com/css2？family = Noto + Serif + JP：wght @ 300＆ display = swap "rel =" stylesheet ">
+    <link rel="icon" href="common/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="common/img/apple_touch_icon.png">
+    <link rel="stylesheet" href="https://harukiyade.github.io/w-holdings/animate.min.css"
+    type="text/animate.min.css"/>
+    <link rel="stylesheet" href="https://harukiyade.github.io/w-holdings/base.css"
+    type="text/css"/>
+    <link rel="stylesheet" href="common/css/base.css">
+    <link rel="stylesheet" href="common/css/animate.min.css">
+</head>
+
+<body style>
+    <div class="wrapper2" id="canvas-wrap">
+        <canvas id="canvas-container" width="1242" height="500">
+        </canvas>
+    </div>
+    <script src="common/js/canvas2.js" async=""></script>
+    <div id="wrapper" class="p-top">
+        <header id="header" class="header is-fixed">
+            <div class="header__inner">
+                <h1 class="header-logo">
+                    <a href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/1index.html" class="header-logo__link">
+                        <img src="common/img/logo_header.JPG" alt="Tsunagu">
+                    </a>
+                </h1>
+                <div class="header-hambuger">
+                    <div class="header-hambuger__item item1"></div>
+                    <div class="header-hambuger__item item2"></div>
+                    <div class="header-hambuger__item item3"></div>
+                </div>
+                <nav class="header-nav">
+                    <!-- <div class="header-nav__info">
+                                            <div class="header-nav__logo sp-effect">
+                                                <a href="./"><img src="common/img/logo_header.png" alt="Tsunagu"></a>
+                                            </div>
+                                        </div> -->
+                    <ul class="header-nav__list">
+                        <li class="header-nav__item sp-effect">
+                            <a class="header-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/1index.html">
+                                <div class="header-nav__link__inner">
+                                    <div class="header-nav__en">text</div>
+                                    <div class="header-nav__jp">テキスト</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header-nav__item sp-effect">
+                            <a class="header-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/service.html">
+                                <div class="header-nav__link__inner">
+                                    <div class="header-nav__en">text</div>
+                                    <div class="header-nav__jp">テキスト</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header-nav__item sp-effect">
+                            <a class="header-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/gallery.html">
+                                <div class="header-nav__link__inner">
+                                    <div class="header-nav__en">text</div>
+                                    <div class="header-nav__jp">テキスト</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header-nav__item sp-effect">
+                            <a class="header-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/recruit.html">
+                                <div class="header-nav__link__inner">
+                                    <div class="header-nav__en">text</div>
+                                    <div class="header-nav__jp">テキスト</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header-nav__item sp-effect">
+                            <a class="header-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/news.html">
+                                <div class="header-nav__link__inner">
+                                    <div class="header-nav__en">text</div>
+                                    <div class="header-nav__jp">テキスト</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header-nav__item sp-effect">
+                            <a class="header-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/blog.html">
+                                <div class="header-nav__link__inner">
+                                    <div class="header-nav__en">text</div>
+                                    <div class="header-nav__jp">テキスト</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header-nav__item sp-effect">
+                            <a class="header-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/company.html">
+                                <div class="header-nav__link__inner">
+                                    <div class="header-nav__en">text</div>
+                                    <div class="header-nav__jp">テキスト</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header-nav__item sp-effect">
+                            <a class="header-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/partner.html">
+                                <div class="header-nav__link__inner">
+                                    <div class="header-nav__en">text</div>
+                                    <div class="header-nav__jp">テキスト</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="header-nav__item header-nav__item--contact sp-effect">
+                            <a class="header-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/contact.html">
+                                <div class="header-nav__link__inner">
+                                    <div class="header-nav__en">text</div>
+                                    <div class="header-nav__jp">テキスト</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- #header -->
+
+        <div id="loading" class="loading">
+            <div class="loading__logo">
+                <img src="common/img/logo_header.JPG" alt="W Holdings">
+            </div>
+            <div class="loading__spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+        <!-- end #loading -->
+
+        <main id="main" class="main">
+            <div id="main-visual" class="main-visual js-pager-target">
+                <video class="top-video" id="video" src="common/movie/sample.MOV" autoplay="" loop="" muted="" playsinline=""></video>
+                <div class="inner">
+                    <div class="site-head">
+                        <h1 class="site-head__ttl js-effect fadeInUp" style="visibility: visible; animation-name: fadeInUp;">W Holdings sample</h1>
+                        <p class="site-head__sttl js-effect fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                            <span>W Holdings sample</span>
+                        </p>
+                        <p class="site-head__copy js-effect fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                            <span>
+                                テキスト
+                                <br class="sp">
+                                テキスト
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div id="l-navi__scroll" class="white js-effect fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <div id="l-navi__scroll-inner">
+                        <div id="l-navi__scroll-text">SCROLL</div>
+                        <div id="l-navi__scroll-icon"></div>
+                    </div>
+                </div>
+                <div id="l-navi__pager" class="js-effect fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                    <ul id="l-navi__pager-list">
+                        <li class="no1" data-section="#main-visual"></li>
+                        <li class="no2" data-section="#salespoint"></li>
+                        <li class="no3 is-current" data-section="#service"></li>
+                        <li class="no4" data-section="#gallery"></li>
+                        <li class="no5" data-section="#recruit"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="salespoint" class="salespoint js-pager-target">
+                <div class="inner">
+                    <div class="c-headline js-effect fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                        <h2 class="c-headline__jp3">
+                            <span>text</span>
+                        </h2>
+                        <p class="c-headline__jp">
+                            <span>テキスト</span>
+                        </p>
+                    </div>
+                    <div class="salespoint__list">
+                        <div class="salespoint__item">
+                            <div class="salespoint__ico js-effect fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                <img src="common/img/logo_header.JPG" alt="Performance">
+                            </div>
+                            <div class="salespoint__desc">
+                                <p class="salespoint__lbl js-effect fadeInUp" style="visibility: visible; animation-name: fadeInUp;">text</p>
+                                <h3 class="salespoint__sttl js-effect fadeInUp" style="visibility: visible; animation-name: fadeInUp; height: 87px;">
+                                    <span class="salespoint__sttl__inner">
+                                        <span class="sm">ここに</span>
+                                        <span class="price">テキスト</span>
+                                        <span class="sm">
+                                            が
+                                            <br>
+                                            きます
+                                        </span>
+                                    </span>
+                                </h3>
+                                <p class="salespoint__copy js-effect fadeInUp" style="visibility: visible; animation-name: fadeInUp;">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                        <div class="salespoint__item">
+                            <div class="salespoint__ico js-effect fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <img src="common/img/logo_header.JPG" alt="Quality">
+                            </div>
+                            <div class="salespoint__desc js-effect fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <p class="salespoint__lbl js-effect fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">text</p>
+                                <h3 class="salespoint__sttl js-effect fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp; height: 87px;">
+                                    <span class="salespoint__sttl__inner">
+                                        <span class="sm">テキスト</span>
+                                        <br>
+                                        <span class="lg">テキスト</span>
+                                    </span>
+                                </h3>
+                                <p class="salespoint__copy js-effect fadeInUp" style="visibility: visible; animation-name: fadeInUp;">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                        <div class="salespoint__item">
+                            <div class="salespoint__ico js-effect fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                                <img src="common/img/logo_header.JPG" alt="Price">
+                            </div>
+                            <div class="salespoint__desc js-effect fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                                <p class="salespoint__lbl js-effect fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">Price</p>
+                                <h3 class="salespoint__sttl js-effect fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp; height: 87px;">
+                                    <span class="salespoint__sttl__inner">
+                                        <span class="lg">テキスト</span>
+                                    </span>
+                                </h3>
+                                <p class="salespoint__copy js-effect fadeInUp" style="visibility: visible; animation-name: fadeInUp;">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="service" class="t-service js-pager-target">
+                <div class="inner">
+                    <div class="c-headline js-effect fadeInUp">
+                        <h2 class="c-headline__jp4">
+                            <span>text</span>
+                        </h2>
+                        <p class="c-headline__jp2">
+                            <span>テキスト</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="t-service__list">
+                    <div class="t-service__item js-effect fadeInUp">
+                        <a href="service.html?anc=anc-01" class="t-service__link">
+                            <figure class="t-service__bg">
+                                <img src="common/img/w_holdings.JPG" alt="">
+                            </figure>
+                            <div class="t-service__desc">
+                                <div class="t-service__desc__inner">
+                                    <p class="t-service__lbl">text</p>
+                                    <h3 class="t-service__sttl">テキスト</h3>
+                                    <p class="t-service__btn">
+                                        テキスト 
+                                        <span>＞</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="t-service__item js-effect fadeInUp">
+                        <a href="service.html?anc=anc-02" class="t-service__link">
+                            <figure class="t-service__bg">
+                                <img src="common/img/w_holdings.JPG" alt="">
+                            </figure>
+                            <div class="t-service__desc">
+                                <div class="t-service__desc__inner">
+                                    <p class="t-service__lbl">text</p>
+                                    <h3 class="t-service__sttl">テキスト</h3>
+                                    <p class="t-service__btn">
+                                        テキスト
+                                        <span>＞</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="t-service__item js-effect fadeInUp">
+                        <a href="service.html?anc=anc-03" class="t-service__link">
+                            <figure class="t-service__bg">
+                                <img src="common/img/w_holdings.JPG" alt="">
+                            </figure>
+                            <div class="t-service__desc">
+                                <div class="t-service__desc__inner">
+                                    <p class="t-service__lbl">text</p>
+                                    <h3 class="t-service__sttl">テキスト</h3>
+                                    <p class="t-service__btn">
+                                        テキスト 
+                                        <span>＞</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="t-service__item js-effect fadeInUp">
+                        <a href="service.html?anc=anc-04" class="t-service__link">
+                            <figure class="t-service__bg">
+                                <img src="common/img/w_holdings.JPG" alt="">
+                            </figure>
+                            <div class="t-service__desc">
+                                <div class="t-service__desc__inner">
+                                    <p class="t-service__lbl">text</p>
+                                    <h3 class="t-service__sttl">テキスト</h3>
+                                    <p class="t-service__btn">
+                                        テキスト 
+                                        <span>＞</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="t-service__item js-effect fadeInUp">
+                        <a href="service.html?anc=anc-05" class="t-service__link">
+                            <figure class="t-service__bg">
+                                <img src="common/img/w_holdings.JPG" alt="">
+                            </figure>
+                            <div class="t-service__desc">
+                                <div class="t-service__desc__inner">
+                                    <p class="t-service__lbl">text</p>
+                                    <h3 class="t-service__sttl">テキスト</h3>
+                                    <p class="t-service__btn">
+                                        テキスト
+                                        <span>＞</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="t-service__item js-effect fadeInUp">
+                        <a href="service.html?anc=anc-06" class="t-service__link">
+                            <figure class="t-service__bg">
+                                <img src="common/img/w_holdings.JPG" alt="">
+                            </figure>
+                            <div class="t-service__desc">
+                                <div class="t-service__desc__inner">
+                                    <p class="t-service__lbl">text</p>
+                                    <h3 class="t-service__sttl">テキスト</h3>
+                                    <p class="t-service__btn">
+                                        テキスト
+                                        <span>＞</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="gallery" class="gallery js-pager-target">
+                <div class="inner">
+                    <div class="c-headline js-effect fadeInUp">
+                        <h2 class="c-headline__jp3">
+                            <span>text</span>
+                        </h2>
+                        <p class="c-headline__jp">
+                            <span>テキスト</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="case">
+                    <div class="loopSlider js-effect fadeInUp">
+                        <ul class="case-list">
+                            <li>
+                                <img src="common/img/w_holdings.jpeg" alt="">
+                            </li>
+                            <li>
+                                <img src="common/img/w_holdings.jpeg" alt="">
+                            </li>
+                            <li>
+                                <img src="common/img/w_holdings.jpeg" alt="">
+                            </li>
+                            <li>
+                                <img src="common/img/w_holdings.jpeg" alt="">
+                            </li>
+                            <li>
+                                <img src="common/img/w_holdings.jpeg" alt="">
+                            </li>
+                            <li>
+                                <img src="common/img/w_holdings.jpeg" alt="">
+                            </li>
+                            <li>
+                                <img src="common/img/w_holdings.jpeg" alt="">
+                            </li>
+                            <li>
+                                <img src="common/img/w_holdings.jpeg" alt="">
+                            </li>
+                            <li>
+                                <img src="common/img/w_holdings.jpeg" alt="">
+                            </li>
+                            <li>
+                                <img src="common/img/w_holdings.jpeg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="case__inner">
+                        <div class="case__txt-area">
+                            <div class="case__sttl js-effect fadeInUp">
+                                <span>text</span>
+                            </div>
+                            <h2 class="case__ttl js-effect fadeInUp">
+                                <span>テキスト</span>
+                            </h2>
+                            <div class="case__copy js-effect fadeInUp">
+                                <p>
+                                    テキストテキストテキスト
+                                    <br class="pc">
+                                    テキストテキストテキスト
+                                    <br class="pc">
+                                    テキストテキストテキスト
+                                    <br class="pc">
+                                    テキストテキストテキスト
+                                    <br class="pc">
+                                    テキストテキストテキスト
+                                </p>
+                            </div>
+                            <a href="gallery.html" class="case__btn js-effect fadeInUp">
+                                <div class="case__btn__txt">
+                                    <span>テキスト</span>
+                                </div>
+                                <div class="case__btn__arrow">
+                                    <img src="common/img/btn_arrow2.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="recruit" class="t-recruit js-pager-target">
+                <div class="t-recruit__bg">
+                    <img src="common/img/IMG_2624.JPG" alt="">
+                </div>
+                <div class="t-recruit__inner">
+                    <div class="t-recruit__body">
+                        <div class="c-headline js-effect fadeInUp">
+                            <h2 class="c-headline__jp4">
+                                <span>text</span>
+                            </h2>
+                            <p class="c-headline__jp">
+                                <span>テキスト</span>
+                            </p>
+                        </div>
+                        <ul class="t-recruit__lbl js-effect fadeInUp">
+                            <li>テキストテキストテキスト</li>
+                            <li>テキストテキストテキスト</li>
+                            <li>テキストテキストテキスト</li>
+                        </ul>
+                        <div class="t-recruit__copy js-effect fadeInUp">
+                            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                        </div>
+                        <a href="recruit.html" class="t-recruit__btn js-effect fadeInUp">
+                            <div class="t-recruit__btn__arrow">
+                                <img src="common/img/btn_arrow1.svg" alt="">
+                            </div>
+                            <div class="t-recruit__btn__txt">
+                                <span>text</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- #main -->
+
+        <footer id="footer" class="footer">
+            <div class="footer__inner">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <a href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/1index.html" class="footer-logo__link">
+                            <img src="common/img/logo_footer.JPG" alt="W Holdings">
+                        </a>
+                    </div>
+
+                    <nav class="footer-nav">
+                        <ul class="footer-nav__list">
+                            <li class="footer-nav__item">
+                                <a class="footer-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/1index.html">
+                                    <div class="footer-nav__link__inner">
+                                        <div class="footer-nav__en">text</div>
+                                        <div class="footer-nav__jp">テキスト</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/service.html">
+                                    <div class="footer-nav__link__inner">
+                                        <div class="footer-nav__en">text</div>
+                                        <div class="footer-nav__jp">テキスト</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/gallery.html">
+                                    <div class="footer-nav__link__inner">
+                                        <div class="footer-nav__en">text</div>
+                                        <div class="footer-nav__jp">テキスト</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/recruit.html">
+                                    <div class="footer-nav__link__inner">
+                                        <div class="footer-nav__en">text</div>
+                                        <div class="footer-nav__jp">テキスト</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/news.html">
+                                    <div class="footer-nav__link__inner">
+                                        <div class="footer-nav__en">text</div>
+                                        <div class="footer-nav__jp">テキスト</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/blog.html">
+                                    <div class="footer-nav__link__inner">
+                                        <div class="footer-nav__en">text</div>
+                                        <div class="footer-nav__jp">テキスト</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/company.html">
+                                    <div class="footer-nav__link__inner">
+                                        <div class="footer-nav__en">text</div>
+                                        <div class="footer-nav__jp">会社概要</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footer-nav__item">
+                                <a class="footer-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/partner.html">
+                                    <div class="footer-nav__link__inner">
+                                        <div class="footer-nav__en">text</div>
+                                        <div class="footer-nav__jp">テキスト</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="footer-nav__item footer-nav__item--contact">
+                                <a class="footer-nav__link" href="file:///Users/harukishiroyama/Desktop/TSUNAGU%20LP/contact.html">
+                                    <div class="footer-nav__link__inner">
+                                        <div class="footer-nav__en">text</div>
+                                        <div class="footer-nav__jp">テキスト</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-copyright">
+                    <small>W Hoidings</small>
+                </div>
+            </div>
+            <div class="pagetop" style="display: block;">
+                <img src="common/img/ico_backtotop.svg" alt="TOP">
+            </div>
+        </footer>
+        <!-- #footer -->
+    </div>
+    <!-- #wrapper -->
+    <script src="common/js/jquery-1.11.0.min.js"></script>
+    <script src="common/js/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="common/js/jquery.cookie.min.js"></script>
+    <script src="common/js/jquery.matchHeight.js"></script>
+    <script src="common/js/wow.min.js"></script>
+    <script src="common/js/jquery.focuspoint.js"></script>
+    <script src="common/js/functions.js"></script>
+
+    <!-- CMS-TRACKING-CODE START -->
+    <script src="https://sitest.jp/tracking/sitest_js?p=608098729" async=""></script>
+    <!-- CMS-TRACKING-CODE END -->
+
+</body>
+</html>
+
